@@ -1,0 +1,5 @@
+﻿
+        .stars{ overflow: hidden; clear: both; margin: 10px; padding: 10px; border: medium double #ff0000;}
+        .stars span{ float: left; height: 30px; line-height: 30px; cursor:default;}
+        .stars i{width: 20px; height: 20px; line-height: 20px; float: left; margin-right: 20px; background: #fcf; color: #f6f; text-align: center; cursor:default; font-style: normal;}
+        .stars .on{ color: #FF0099;}
