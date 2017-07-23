@@ -63,7 +63,7 @@
           </ul>
         </li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">其他服务 <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="adminLogin">管理员登录</a></li>
             <li><a href="collect.action?username=${sessionScope.user.username }">收藏夹</a></li>
@@ -78,14 +78,14 @@
         </div>
       </form>
       <ul class="nav navbar-nav">
-        <li><a href="login" data-target="#login"><span class="glyphicon glyphicon-user"></span> Login</a>
-        <li><a href="register" data-target="#login"><span class="glyphicon glyphicon-user"></span>  Register</a></li>
+        <li><a href="login" data-target="#login"><span class="glyphicon glyphicon-user"></span> 登录</a>
+        <li><a href="register" data-target="#login"><span class="glyphicon glyphicon-user"></span>  注册</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle cart" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span> Cart  </a>
           <div class="dropdown-menu mini-cart">
           
           <div class="clearfix">
-          <a href="index" class="btn btn-primary">继续购物</a> <a href="checkout" class="btn btn-primary">checkout</a>
+          <a href="index" class="btn btn-primary">继续购物</a> <a href="checkout.action?username=${sessionScope.user.username }" class="btn btn-primary">查看购物车</a>
           </div>
 
           </div>

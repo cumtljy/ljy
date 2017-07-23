@@ -4,6 +4,7 @@ package org.fkit.mapper;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
@@ -48,11 +49,14 @@ public interface GoodMapper {
 		List<Good> findAll4(int id);
       
       @Select(" select * from tb_comment where id=#{id}")
-  	List<Comment> findAll5(int id);
+  	  List<Comment> findAll5(int id);
 
       @Select(" select * from tb_good where id=#{id}")
       List<Good> selectWhitParam(Map<String, Object> param);
       
       @Insert("insert into tb_good(good_name,price,catagory_sn,image,image2,image3,stock,sales) values(#{good_name},#{price},#{catagory_sn},#{image},#{image2},#{image3},#{stock},#{sales})")
 	  void insertthing(Good e);
+
+      @Delete("delete from tb_good where id=#{id}")
+      void deleteGood(Map<String, Object> param);
 }

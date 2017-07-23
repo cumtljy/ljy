@@ -1,0 +1,27 @@
+table.jytable
+{
+	font-family:"Times New Roman", Times, serif;
+	font-style:italic;
+	width:100%;
+	border-collapse:collapse;
+	border: 2px double #ffddff
+}
+
+table.jytable th 
+{
+	font-size:1.1em;
+	text-align:left;
+	padding-top:5px;
+	padding-bottom:4px;
+	background-color:#FF0066;
+	color:#ffffff;
+}
+table.jytable tr
+{
+	color:#000000;
+	background-color:#ffffff;
+}
+table.jytable td
+{
+text-align:center;
+}

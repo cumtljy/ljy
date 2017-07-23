@@ -11,6 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/font-awesome/3.2.1/css/font-awesome.min.css">
 		<link rel="stylesheet" href="assets/css/jquery-ui-1.10.3.custom.min.css" />
 		<link rel="stylesheet" href="assets/css/ace.min.css" />
+		<link rel="stylesheet" href="assets/css/jytable.css" />
 		<link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
 		<link rel="stylesheet" href="assets/css/ace-skins.min.css" />
 		<script src="assets/js/ace-extra.min.js"></script>
@@ -28,16 +29,7 @@
 				</div><!-- /.navbar-header -->
 				<div class="navbar-header pull-right" role="navigation">
 					<ul class="nav ace-nav">
-						<li class="grey">
-							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
-								<i class="icon-tasks"></i>
-							</a>
-						</li>
-						<li class="purple">
-							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
-								<i class="icon-bell-alt icon-animated-bell"></i>
-							</a>
-						</li>
+					
 						<li class="light-blue">
 							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
 								<img class="nav-user-photo" src="images/photos/g13.jpg"  />
@@ -58,28 +50,7 @@
 					<span class="menu-text"></span>
 				</a>
 				<div class="sidebar" id="sidebar">
-					<div class="sidebar-shortcuts" id="sidebar-shortcuts">
-						<div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
-							<button class="btn btn-success">
-								<i class="icon-signal"></i>
-							</button>
-							<button class="btn btn-info">
-								<i class="icon-pencil"></i>
-							</button>
-							<button class="btn btn-warning">
-								<i class="icon-group"></i>
-							</button>
-							<button class="btn btn-danger">
-								<i class="icon-cogs"></i>
-							</button>
-						</div>
-						<div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
-							<span class="btn btn-success"></span>
-							<span class="btn btn-info"></span>
-							<span class="btn btn-warning"></span>
-							<span class="btn btn-danger"></span>
-						</div>
-					</div><!-- #sidebar-shortcuts -->
+				
 					<ul class="nav nav-list">
 						<li class="active">
 							<a href="main">
@@ -219,10 +190,10 @@
                           <div class="table-responsive">
 										
    <h2>查询并修改状态</h2>
-    <table class="table table-condensed" border="1">
+    <table id="jytable" class="jytable" border="1">
      	<thead>
-        	<tr> 
-            	<th>订单号</th>  
+        	<tr class="alt"> 
+            	<th class="jytable">订单号</th>  
             	<th>用户名</th>   
                 <th >运送地址</th>
                 <th >联系电话</th>

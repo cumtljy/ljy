@@ -28,16 +28,7 @@
 				</div><!-- /.navbar-header -->
 				<div class="navbar-header pull-right" role="navigation">
 					<ul class="nav ace-nav">
-						<li class="grey">
-							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
-								<i class="icon-tasks"></i>
-							</a>
-						</li>
-						<li class="purple">
-							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
-								<i class="icon-bell-alt icon-animated-bell"></i>
-							</a>
-						</li>
+			
 						<li class="light-blue">
 							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
 								<img class="nav-user-photo" src="images/photos/g13.jpg"  />
@@ -58,28 +49,6 @@
 					<span class="menu-text"></span>
 				</a>
 				<div class="sidebar" id="sidebar">
-					<div class="sidebar-shortcuts" id="sidebar-shortcuts">
-						<div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
-							<button class="btn btn-success">
-								<i class="icon-signal"></i>
-							</button>
-							<button class="btn btn-info">
-								<i class="icon-pencil"></i>
-							</button>
-							<button class="btn btn-warning">
-								<i class="icon-group"></i>
-							</button>
-							<button class="btn btn-danger">
-								<i class="icon-cogs"></i>
-							</button>
-						</div>
-						<div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
-							<span class="btn btn-success"></span>
-							<span class="btn btn-info"></span>
-							<span class="btn btn-warning"></span>
-							<span class="btn btn-danger"></span>
-						</div>
-					</div><!-- #sidebar-shortcuts -->
 					<ul class="nav nav-list">
 						<li class="active">
 							<a href="main">

@@ -1,6 +1,7 @@
 package org.fkit.mapper;
 
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Param;
@@ -28,6 +29,17 @@ public interface CollectMapper {
 	@Select("select * from tb_collect where username = #{username} and goodid = #{goodid}")
 	Collect collectFind(@Param("username")String username,
 			@Param("goodid") int goodid);
+	
+	
+	
+	@Select(" select * from tb_collect where username=#{username}")
+	List<Collect> findcollect(Map<String, Object> param);
+	
+	@Select("insert into tb_collect(good_name,price,image,goodid,username) values(#{good_name},#{price},#{image},#{goodid},#{username})")
+	void addcollect(Collect e);
+	
+	@Delete("delete from tb_collect where goodid=#{goodid}")
+	void deleteCollect(Map<String, Object> param);
 
 
 }

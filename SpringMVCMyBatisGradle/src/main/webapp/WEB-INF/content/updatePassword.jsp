@@ -70,7 +70,7 @@
           </ul>
         </li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">其他服务 <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="adminLogin">管理员登录</a></li>
            <li><a href="collect.action?username=${sessionScope.user.username }">收藏夹</a></li>
@@ -85,10 +85,10 @@
         </div>
       </form>
       <ul class="nav navbar-nav">
-        <li><a href="login" data-target="#login"><span class="glyphicon glyphicon-user"></span> Login</a>
-        <li><a href="register" data-target="#login"><span class="glyphicon glyphicon-user"></span>  Register</a></li>
+        <li><a href="login" data-target="#login"><span class="glyphicon glyphicon-user"></span> 登录</a>
+        <li><a href="register" data-target="#login"><span class="glyphicon glyphicon-user"></span>  注册</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle cart" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span> Cart <span class="cart-counter">8</span> <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle cart" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span> 购物车<span class="caret"></span></a>
           <div class="dropdown-menu mini-cart">
           
 
@@ -108,7 +108,7 @@
 <div class="container">
 <!-- form -->
 <div class="content inside-page about">
-       <h2 class="title">Update Password</h2>
+       <h2 class="title">修改密码</h2>
        <div class="breadcrumb"><a href="index">Home</a> / Update Password</div>
 
        
@@ -117,14 +117,14 @@
 		<div class="form-horizontal content-center">
 				
 				<div class="form-group">
-				<label for="inputEmail3" class="col-sm-4 control-label">Name</label>
+				<label for="inputEmail3" class="col-sm-4 control-label">用户名</label>
 				<div class="col-sm-8">
 				<input type="text" class="form-control" id="username" name="username">
 				</div>				
 				</div>
 
 				<div class="form-group">
-				<label for="inputEmail3" class="col-sm-4 control-label">Address</label>
+				<label for="inputEmail3" class="col-sm-4 control-label">地址</label>
 				<div class="col-sm-8">
 				<textarea class="form-control" id="address" name="address"></textarea>
 				</div>				
@@ -132,20 +132,20 @@
 				
 
 				<div class="form-group">
-				<label for="inputEmail3" class="col-sm-4 control-label">Phone</label>
+				<label for="inputEmail3" class="col-sm-4 control-label">联系电话</label>
 				<div class="col-sm-8">
 				<input type="text" class="form-control" id="phone" name="phone">
 				</div>				
 				</div>
 
 				<div class="form-group">
-				<label for="inputEmail3" class="col-sm-4 control-label">Email</label>
+				<label for="inputEmail3" class="col-sm-4 control-label">电子邮箱</label>
 				<div class="col-sm-8">
 				<input type="email" class="form-control" id="email" name="email"  />
 				</div>
 				</div>
 				<div class="form-group">
-				<label for="inputEmail3" class="col-sm-4 control-label">Password</label>
+				<label for="inputEmail3" class="col-sm-4 control-label">密码</label>
 				<div class="col-sm-8">
 				<input type="text" class="form-control" id="password" name="password">
 				</div>				
@@ -188,7 +188,7 @@
                     <button class="btn btn-primary"><i class="fa fa-paper-plane"></i> 反馈意见</button>                   
                 </div>
                 <div class="col-sm-3">
-                    <h4>Like and follow us</h4>
+                    <h4>加入我们</h4>
                     <span class="social"><a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i> <a href="#"><i class="fa fa-youtube"></i></a> <a href="#"><i class="fa fa-pinterest"></i></a></span>
                 </div>
 

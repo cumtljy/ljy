@@ -7,6 +7,7 @@ import java.util.Map;
 import org.apache.ibatis.session.SqlSession;
 import org.fkit.domain.Good;
 import org.fkit.factory.FKSqlSessionFactory;
+import org.fkit.mapper.CartMapper;
 import org.fkit.mapper.GoodMapper;
 
 
@@ -19,9 +20,9 @@ public class GoodTest {
 		GoodTest t = new GoodTest();
 		GoodMapper em = session.getMapper(GoodMapper.class);
 		
-//  	   t.testSelectWhitParam(em);
-   	   t.testInsertthing(em);
-
+  	       t.testSelectWhitParam(em);
+//  	   t.testInsertthing(em);
+//          t.testDeleteGood(em);
 		// 提交事务
 		session.commit();
 		// 关闭Session
@@ -55,6 +56,15 @@ public class GoodTest {
 			em.insertthing(e);
 			System.out.println("插入成功！商品名称：" + e.getGood_name() );
 		}
-		
+		public void testDeleteGood(GoodMapper em){
+			// 使用Map装载参数
+			Map<String, Object> param = new HashMap<String, Object>();
+			param.put("id", 40);
+			
+			// 动态删除
+			em.deleteGood(param);
+			System.out.println("删除成功");
+
+		}
 	
 }
