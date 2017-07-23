@@ -1,6 +1,7 @@
 package org.fkit.service;
 
 import java.util.List;
+import java.util.Map;
 
 import org.fkit.domain.Cart;
 import org.fkit.domain.User;
@@ -21,5 +22,6 @@ public interface UserService {
 	User update(String username, String password, String email, String phone,String address);
 	User find(String username, String email);
 	List<User> getAll(String username);
+	
 	
 }

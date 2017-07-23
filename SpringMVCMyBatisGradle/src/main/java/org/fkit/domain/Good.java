@@ -16,7 +16,7 @@ public class Good {
 	
 	private int id;				// id	
 	private String good_name;			// 作者
-	private String catagory_sn;		// 出版社
+	private int catagory_sn;		// 出版社
 	private Double price;			// 价格
 	private String image;
 	private String image2;
@@ -56,11 +56,11 @@ public class Good {
 		this.image = image;
 	}
 
-	public String getCatagory_sn() {
+	public int getCatagory_sn() {
 		return catagory_sn;
 	}
 
-	public void setCatagory_sn(String catagory_sn) {
+	public void setCatagory_sn(int catagory_sn) {
 		this.catagory_sn = catagory_sn;
 	}
 
@@ -127,5 +127,9 @@ public class Good {
 				+ ", catagory_sn=" + catagory_sn + ", price=" + price + ", image=" + image
 				+ ", image2=" + image2+ ", image3=" + image3+   ", stock=" + stock + ", sales=" + sales + "]";
 	}
+
+
+
+
 
 }

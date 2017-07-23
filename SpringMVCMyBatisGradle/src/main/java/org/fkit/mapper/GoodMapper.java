@@ -31,17 +31,17 @@ public interface GoodMapper {
 	
 	@Select(" select * from tb_good where catagory_sn =3")
 	List<Good> findAll3();
-		@Insert("insert into tb_good(goodid,good_name,price,category_sn,image,image2,image3,stock,sales) values(#{goodid},#{good_name},#{catagory_sn},#{image},#{image2},#{image3},#{stock},#{sales})")
-		void insertthing(@Param("goodid")int goodid,
-				         @Param("good_name")String good_name,
-				         @Param("price")Double price,
-		   				@Param("catagory_sn")int catagry_sn,
-						@Param("image")String image,
-						@Param("image2")String image2,
-						@Param("image3")String image3,
-						@Param("stock")int stock,
-						@Param("sales")int sales);
-
+	
+//	@Insert("insert into tb_good(good_name,price,category_sn,image,image2,image3,stock,sales) values(#{good_name},#{catagory_sn},#{image},#{image2},#{image3},#{stock},#{sales})")
+//	  void insertthing(
+//				     @Param("good_name")String good_name,
+//				     @Param("price")Double price,
+//		   		     @Param("catagory_sn")int catagry_sn,
+//					 @Param("image")String image,
+//					 @Param("image2")String image2,
+//					 @Param("image3")String image3,
+//					 @Param("stock")int stock,
+//					 @Param("sales")int sales);
 
       @Select(" select * from tb_good where id=#{id}")
 
@@ -52,4 +52,7 @@ public interface GoodMapper {
 
       @Select(" select * from tb_good where id=#{id}")
       List<Good> selectWhitParam(Map<String, Object> param);
+      
+      @Insert("insert into tb_good(good_name,price,catagory_sn,image,image2,image3,stock,sales) values(#{good_name},#{price},#{catagory_sn},#{image},#{image2},#{image3},#{stock},#{sales})")
+	  void insertthing(Good e);
 }

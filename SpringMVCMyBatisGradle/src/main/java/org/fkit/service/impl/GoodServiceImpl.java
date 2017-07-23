@@ -23,6 +23,7 @@ public class GoodServiceImpl implements GoodService {
 	/**
 	 * 自动注入BookMapper
 	 * */
+
 	@Autowired
 	private GoodMapper goodMapper;
 
@@ -60,5 +61,6 @@ public class GoodServiceImpl implements GoodService {
 			// TODO Auto-generated method stub
 			return goodMapper.findAll5(id);
 		}
+	  
 	
 }
