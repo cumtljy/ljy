@@ -81,7 +81,7 @@
         <li><a href="login" data-target="#login"><span class="glyphicon glyphicon-user"></span> 登录</a>
         <li><a href="register" data-target="#login"><span class="glyphicon glyphicon-user"></span>  注册</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle cart" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span> Cart  </a>
+          <a href="#" class="dropdown-toggle cart" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span> 购物车   </a>
           <div class="dropdown-menu mini-cart">
           
           <div class="clearfix">
@@ -181,7 +181,7 @@
                     <button class="btn btn-primary"><i class="fa fa-paper-plane"></i> 反馈意见</button>                   
                 </div>
                 <div class="col-sm-3">
-                    <h4>Like and follow us</h4>
+                    <h4>加入我们</h4>
                     <span class="social"><a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i> <a href="#"><i class="fa fa-youtube"></i></a> <a href="#"><i class="fa fa-pinterest"></i></a></span>
                 </div>
 

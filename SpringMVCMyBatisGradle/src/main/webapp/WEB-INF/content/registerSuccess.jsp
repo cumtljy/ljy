@@ -88,7 +88,7 @@
         <li><a href="login" data-target="#login"><span class="glyphicon glyphicon-user"></span> 登录</a>
         <li><a href="register" data-target="#login"><span class="glyphicon glyphicon-user"></span>  注册</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle cart" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span> Cart  <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle cart" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span> 购物车  <span class="caret"></span></a>
           <div class="dropdown-menu mini-cart">
           
           <div class="clearfix">

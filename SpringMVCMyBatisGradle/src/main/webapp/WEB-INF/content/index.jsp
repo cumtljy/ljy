@@ -48,7 +48,7 @@
           </ul>
         </li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">其他服务 <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="adminLogin">管理员登录</a></li>
             <li><a href="collect.action?username=${sessionScope.user.username }">收藏夹</a></li>
@@ -62,8 +62,8 @@
         </div>
       </form>
       <ul class="nav navbar-nav">
-        <li><a href="login" data-target="#login"><span class="glyphicon glyphicon-user"></span> Login</a>
-        <li><a href="register" data-target="#login"><span class="glyphicon glyphicon-user"></span>  Register</a></li>
+        <li><a href="login" data-target="#login"><span class="glyphicon glyphicon-user"></span> 登录</a>
+        <li><a href="register" data-target="#login"><span class="glyphicon glyphicon-user"></span>  注册</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle cart" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span> Cart <span class="cart-counter">8</span> <span class="caret"></span></a>
           <div class="dropdown-menu mini-cart">
@@ -87,11 +87,11 @@
 <div class="hero-land clearfix">
         <div class="landing men-land">
         <img src="images/female.jpg"  class="img-responsive" alt="slide">
-        <div class="caption animated fadeInUp"><h1>Women Collection</h1><a href="Women"><i class="fa fa-angle-right"></i></a></div>
+        <div class="caption animated fadeInUp"><h1>女装</h1><a href="Women"><i class="fa fa-angle-right"></i></a></div>
         </div>
         <div class="landing women-land">
         <img src="images/male.jpg"  class="img-responsive" alt="slide">
-        <div class="caption  animated fadeInUp"><h1>Men Collection</h1><a href="Men"><i class="fa fa-angle-right"></i></a></div>
+        <div class="caption  animated fadeInUp"><h1>男装</h1><a href="Men"><i class="fa fa-angle-right"></i></a></div>
         </div>
 </div>
 <!-- hero landing -->
@@ -108,24 +108,15 @@
   <div class="carousel-inner">
     <div class="item slides active">
       <img src="images/4.jpg"  class="img-responsive" alt="slide">
-      <div class="carousel-caption">
-            <h2 class="animated slideInLeft">Check out our Wedding Collection</h2>        
-        <button class="btn btn-primary btn-lg" role="button">View all Products</button>
-      </div>
+ 
     </div>
     <div class="item slides">
       <img src="images/5.jpg"  class="img-responsive" alt="slide">
-      <div class="carousel-caption"> 
-            <h2 class="animated slideInLeft">High quality products at your budget</h2>        
-        <button class="btn btn-primary btn-lg" role="button">View all Products</button>
-      </div>
+  
     </div>
     <div class="item slides">
       <img src="images/6.jpg"  class="img-responsive" alt="slide">
-      <div class="carousel-caption"> 
-            <h2 class="animated slideInLeft">Gifts collection for any occasion</h2>        
-        <button class="btn btn-primary btn-lg" role="button">View all Products</button>
-      </div>
+ 
     </div>
   </div>
   <!-- Controls -->
@@ -143,7 +134,7 @@
 <div class="col-sm-5">
 <!-- feature-products -->
 <div class="feature-products">
-        <h3>Featured Products</h3>
+        <h3>特色商品</h3>
         <div id="owl-products" class="owl-carousel">
                     <div class="product">
                             <a href="product"><img src="images/photos/w1.jpg" class="img-responsive"></a>
@@ -151,7 +142,7 @@
                                 <div class="col-md-8"><h5><a href="product">Warm Cloths</a></h5></div>
                                 <div class="col-md-4"><span>$ 200</span></div>
                             </div>
-                            <a href="product" class="btn btn-default"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+                            <a href="product" class="btn btn-default"><i class="fa fa-shopping-cart"></i> 加入购物车</a>
                     </div>
                     <div class="product">
                             <a href="product"><img src="images/photos/w2.jpg" class="img-responsive"></a>
@@ -349,7 +340,7 @@
                     <button class="btn btn-primary"><i class="fa fa-paper-plane"></i> 反馈意见</button>                   
                 </div>
                 <div class="col-sm-3">
-                    <h4>Like and follow us</h4>
+                    <h4>加入我们</h4>
                     <span class="social"><a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i> <a href="#"><i class="fa fa-youtube"></i></a> <a href="#"><i class="fa fa-pinterest"></i></a></span>
                 </div>
 

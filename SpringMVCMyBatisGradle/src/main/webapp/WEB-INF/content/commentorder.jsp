@@ -192,7 +192,7 @@
                     <button class="btn btn-primary"><i class="fa fa-paper-plane"></i> 反馈意见</button>                   
                 </div>
                 <div class="col-sm-3">
-                    <h4>Like and follow us</h4>
+                    <h4>加入我们</h4>
                     <span class="social"><a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i> <a href="#"><i class="fa fa-youtube"></i></a> <a href="#"><i class="fa fa-pinterest"></i></a></span>
                 </div>
 

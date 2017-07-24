@@ -1,36 +1,24 @@
 package org.fkit.test;
-
-import java.io.IOException;
-import java.io.Reader;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.fkit.domain.Collect;
-
 import org.fkit.factory.FKSqlSessionFactory;
 import org.fkit.mapper.CollectMapper;
 
 
+
 public class CollectTest {
 	public static void main(String[] args) throws Exception {
-		 String resource = "applicationContext.xml;springmvc-config.xml;";
-		 Reader reader = null;
-	        try {
-	            reader = Resources.getResourceAsReader(resource);
-	        } catch (IOException e) {
-	            e.printStackTrace();
-	        }
 		// 创建Session实例
 		SqlSession session = FKSqlSessionFactory.getSqlSession();	
 		CollectTest t = new CollectTest();
 		CollectMapper em = session.getMapper(CollectMapper.class);
 		
-// 	       t.testFindCollect(em);
-  	       t.testAddCollect(em);
-//         t.testDeleteCollect(em);
+//         t.testFindCollect(em);
+// 	       t.testAddCollect(em);
+         t.testDeleteCollect(em);
 		// 提交事务
 		session.commit();
 		// 关闭Session
@@ -51,7 +39,7 @@ public class CollectTest {
 		public void testAddCollect(CollectMapper em){
 			// 使用Map装载参数
 			Collect e = new Collect();	
-			e.setGoodid(123456);
+			e.setGoodid(6);
 			e.setUserid(12);
 			e.setGood_name("3");
 			e.setPrice((double) 45);
@@ -66,7 +54,7 @@ public class CollectTest {
 		public void testDeleteCollect(CollectMapper em){
 			// 使用Map装载参数
 			Map<String, Object> param = new HashMap<String, Object>();
-			param.put("goodid", 15);
+			param.put("goodid", 6);
 			
 			// 动态删除
 			em.deleteCollect(param);

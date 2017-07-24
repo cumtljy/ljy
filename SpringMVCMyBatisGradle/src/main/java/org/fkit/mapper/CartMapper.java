@@ -32,7 +32,7 @@ public interface CartMapper {
 	@Select("update tb_cart set quantity=#{quantity} where goodid=#{goodid} and username=#{username}")
 	Cart updatecart(@Param("goodid")int goodid,@Param("username")String username,@Param("quantity")int quantity);
 
-	@Select(" select * from tb_cart where username=#{username} ")
+	@Select(" select * from tb_cart where username=#{username} and goodid=#{goodid}  ")
 	Cart selectCartWithUsername(Map<String, Object> param);
 
 	@Select("update tb_cart set quantity=#{quantity} where  username=#{username} and goodid=#{goodid}")

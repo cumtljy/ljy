@@ -7,7 +7,7 @@ import java.util.Map;
 import org.apache.ibatis.session.SqlSession;
 import org.fkit.domain.Good;
 import org.fkit.factory.FKSqlSessionFactory;
-import org.fkit.mapper.CartMapper;
+
 import org.fkit.mapper.GoodMapper;
 
 

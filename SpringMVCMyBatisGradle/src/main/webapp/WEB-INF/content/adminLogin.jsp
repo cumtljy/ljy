@@ -62,7 +62,7 @@
       
       <ul class="nav navbar-nav">        
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Collections <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">所有商品 <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
              <li><a href="Men">Men</a></li>
             <li><a href="Women">Women</a></li>
@@ -79,25 +79,14 @@
         </div>
       </form>
       <ul class="nav navbar-nav">
-        <li><a href="login" data-target="#login"><span class="glyphicon glyphicon-user"></span> Login</a>
-        <li><a href="register" data-target="#login"><span class="glyphicon glyphicon-user"></span>  Register</a></li>
+        <li><a href="login" data-target="#login"><span class="glyphicon glyphicon-user"></span> 登录</a>
+        <li><a href="register" data-target="#login"><span class="glyphicon glyphicon-user"></span>  注册</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle cart" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span> Cart <span class="cart-counter">8</span> <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle cart" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span> Cart  <span class="caret"></span></a>
           <div class="dropdown-menu mini-cart">
-          <div class="row product-list">
-            <div class="col-xs-3"><a href="#"><img src="images/photos/1.jpg" class="img-responsive" alt="product"></a></div>
-            <div class="col-xs-7"><a href="#">White V-neck Tshirt</a></div>
-            <div class="col-xs-1"><a href="#"><i class="fa fa-close"></i></a></div>
-          </div>
-
-          <div class="row product-list">
-            <div class="col-xs-3"><a href="#"><img src="images/photos/2.jpg" class="img-responsive" alt="product"></a></div>
-            <div class="col-xs-7"><a href="#">White V-neck Tshirt</a></div>
-            <div class="col-xs-1"><a href="#"><i class="fa fa-close"></i></a></div>
-          </div>
-
+          
           <div class="clearfix">
-          <a href="index" class="btn btn-primary">继续购物</a> <a href="checkout" class="btn btn-primary">checkout</a>
+          <a href="index" class="btn btn-primary">继续购物</a> <a href="checkout.action?username=${sessionScope.user.username }" class="btn btn-primary">查看购物车和</a>
           </div>
 
           </div>
@@ -118,7 +107,7 @@
 <form action="adminLogin" method="post">
 		<div class="row">
 			<div class="col-sm-6">
-				<h3>Sign In</h3>
+				<h3>登录</h3>
 				<div class="form-group">
 				<label for="username">管理员姓名</label>
 				<input type="text" class="form-control" id="adminname" name="adminname" placeholder="Enter Loginname">
@@ -129,15 +118,15 @@
 				</div>
 				
 				
-				<button type="submit" class="btn btn-primary">Submit</button>
+				<button type="submit" class="btn btn-primary">登录</button>
 			</div>
 			</form>
 			
 		</div>				
 	
 		<hr>
-		<a href="checkout" class="btn btn-primary pull-left">Continue Shopping</a>
-		<a href="payment" class="btn btn-primary pull-right">Continue</a>
+		<a href="index" class="btn btn-primary pull-left">继续购物</a>
+		<a href="checkout" class="btn btn-primary pull-right">查看购物车</a>
 </div>
 
 
@@ -169,7 +158,7 @@
                     <button class="btn btn-primary"><i class="fa fa-paper-plane"></i> 反馈意见</button>                   
                 </div>
                 <div class="col-sm-3">
-                    <h4>Like and follow us</h4>
+                    <h4>加入我们</h4>
                     <span class="social"><a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i> <a href="#"><i class="fa fa-youtube"></i></a> <a href="#"><i class="fa fa-pinterest"></i></a></span>
                 </div>
 

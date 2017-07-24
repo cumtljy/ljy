@@ -23,7 +23,7 @@ public class CartTest {
 		// 获取EmployeeMapper对象
 		CartMapper em = session.getMapper(CartMapper.class);
 		
-//		t.testSelectWhitParam(em);
+//	t.testSelectWhitParam(em);
 		t.testUpdateCart(em);
 		
 //		t.testDeleteCart(em);
@@ -39,7 +39,7 @@ public class CartTest {
 	public void testSelectWhitParam(CartMapper em){
 		// 使用Map装载参数
 		Map<String, Object> param = new HashMap<String, Object>();
-		param.put("username", "2");
+		param.put("username", "3");
 		// 调用selectWhitParam方法
 		List<Cart> list = em.selectWhitParam(param);
 		// 查看返回结果
@@ -50,21 +50,22 @@ public class CartTest {
 	public void testUpdateCart(CartMapper em){
 		// 使用Map装载参数
 		Map<String, Object> param = new HashMap<String, Object>();
-		param.put("goodid","16");
-		param.put("username","123");
+		param.put("goodid",18);
+		param.put("username","3");
 		// 查询id为1的员工
 		Cart e = em.selectCartWithUsername(param);
 		// 修改员工对象的三个属性
-		e.setQuantity(99);
+		e.setQuantity(11);
 		// 动态更新
 		em.updateCart(e);
+		System.out.println("修改成功");
 	}
 	
 	// 根据设置的属性动态删除数据
 	public void testDeleteCart(CartMapper em){
 		// 使用Map装载参数
 		Map<String, Object> param = new HashMap<String, Object>();
-		param.put("goodid", "15");
+		param.put("goodid", 15);
 		param.put("username", "123");
 		// 动态删除
 		em.deleteCart(param);

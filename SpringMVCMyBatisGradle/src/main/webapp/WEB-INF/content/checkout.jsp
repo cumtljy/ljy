@@ -56,7 +56,7 @@
           </ul>
         </li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">其他服务 <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="adminLogin">管理员登录</a></li>
             <li><a href="collect.action?username=${sessionScope.user.username }">收藏夹</a></li>
@@ -71,10 +71,10 @@
         </div>
       </form>
       <ul class="nav navbar-nav">
-        <li><a href="login" data-target="#login"><span class="glyphicon glyphicon-user"></span> Login</a>
-        <li><a href="register" data-target="#login"><span class="glyphicon glyphicon-user"></span>  Register</a></li>
+        <li><a href="login" data-target="#login"><span class="glyphicon glyphicon-user"></span> 登录</a>
+        <li><a href="register" data-target="#login"><span class="glyphicon glyphicon-user"></span>  注册</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle cart" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span> Cart  <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle cart" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span> 购物车   <span class="caret"></span></a>
           <div class="dropdown-menu mini-cart">
         
 
@@ -98,11 +98,11 @@
 <div class="shopping-cart">
 
 	<div class="row  ">
-            	<div class="col-md-2">Product</div>
-            	<div class="col-md-3">Name</div>
-            	<div class="col-md-2 center price">Price</div>
-            	<div class="col-md-1">Qty</div>
-            	<div class="col-md-3 col-md-offset-1">Action</div>
+            	<div class="col-md-2">商品</div>
+            	<div class="col-md-3">名称</div>
+            	<div class="col-md-2 center price">价格</div>
+            	<div class="col-md-1">数量</div>
+            	<div class="col-md-3 col-md-offset-1">操作</div>
           	</div>
             <hr>
             <c:forEach items="${requestScope.cart_list }" var="w">
@@ -195,7 +195,7 @@
        </div>
           	</c:forEach>  
           	<div class="row ">
-            	<div class="col-xs-8">Total</div>
+            	<div class="col-xs-8">总价</div>
             	<div class="col-xs-2 center price">￥${sum }</div>            	
           	</div>
 
@@ -231,7 +231,7 @@
                     <button class="btn btn-primary"><i class="fa fa-paper-plane"></i> 反馈意见</button>                   
                 </div>
                 <div class="col-sm-3">
-                    <h4>Like and follow us</h4>
+                    <h4>加入我们</h4>
                     <span class="social"><a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i> <a href="#"><i class="fa fa-youtube"></i></a> <a href="#"><i class="fa fa-pinterest"></i></a></span>
                 </div>
 
