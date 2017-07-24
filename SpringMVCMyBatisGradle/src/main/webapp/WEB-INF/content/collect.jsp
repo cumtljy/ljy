@@ -18,7 +18,7 @@
 
 <!-- bootstrap -->
 <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
-
+<link rel="stylesheet" href="assets/css/jytable.css" />
 
 <!-- animate.css -->
 <link rel="stylesheet" href="assets/animate.css" />
@@ -109,7 +109,7 @@
 <div class="container">
 <h1><font color="red">${requestScope.message }</font></h1>
    <h2>我的收藏</h2>
-    <table class="table table-condensed" border="1">
+    <table id="jytable" class="jytable" border="1">
      	<thead>
         	<tr> 
             	<th >商品图片</th>     

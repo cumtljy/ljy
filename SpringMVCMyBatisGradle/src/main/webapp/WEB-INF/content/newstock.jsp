@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="assets/css/ace.min.css" />
 		<link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
 		<link rel="stylesheet" href="assets/css/ace-skins.min.css" />
+		<link rel="stylesheet" href="assets/css/jytable.css" />
 		<script src="assets/js/ace-extra.min.js"></script>
 	</head>
 	<body>
@@ -191,7 +192,7 @@
 										
    <h2>库存销量管理</h2>
   
-    <table class="table table-condensed" border="1">
+    <table  class="jytable" >
      	<thead>
         	<tr> 
             	<th>商品编号</th>  

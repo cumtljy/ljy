@@ -187,28 +187,38 @@
 						<div class="row">
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
-<form action="addproduct" method="post">
+	
+ 	<form action="addproduct" method="post">
+ 	<fieldset>
+ 	<legend><font color="yellow">新品上市:</font></legend>
  	<div class="container">
- 	<div class="col-md-8 col-md-offset-3">
- 		 <div class="input-group input-group-lg">
-	 	 商品名称:	<input  type="text" id="good_name" name="good_name" placeholder="商品名称"/>
+
+ 	<div style="padding: 100px 100px 10px;">
+ 	
+ 		 <div class="input-group ">
+ 		 <span class="input-group-addon">商品名称</span>
+	 	 <input  type="text" id="good_name" name="good_name" placeholder="goodname"/>
 	   	</div><br>	
-	   	<div class="input-group input-group-lg">
-	 	 商品价格：	<input  type="text" id="price" name="price" placeholder="商品价格"/>
+	   	<div class="input-group ">
+	   	<span class="input-group-addon">商品价格</span>
+	 	 <input  type="text" id="price" name="price" placeholder="price"/>
 	 	</div><br>		 	
-	 	<div class="input-group input-group-lg">
-	 	商品库存：	<input  type="text" id="stock" name="stock" placeholder="商品库存"/>
+	 	<div class="input-group ">
+	 	<span class="input-group-addon">商品库存</span>
+	 	<input  type="text" id="stock" name="stock" placeholder="stock"/>
 	 	</div><br>	
-	 	<div class="input-group input-group-lg">
-	 	商品销售：	<input  type="text" id="sales" name="sales" placeholder="商品销量"/>
+	 	<div class="input-group ">
+	 	<span class="input-group-addon">商品销量</span>
+	 	<input  type="text" id="sales" name="sales" placeholder="sales"/>
 	 	</div><br>	
-	 	<div class="input-group input-group-lg">
-	 	商品类别：  <input  type="text" id="catagory_sn" name="catagory_sn" placeholder="商品类别"/>
+	 	<div class="input-group ">
+	 	<span class="input-group-addon">商品类别</span>
+	   <input  type="text" id="catagory_sn" name="catagory_sn" placeholder="catagory"/>
 	 	</div><br>
 	 </div>
 	 </div>
 	 <div class="container">
-	 <div class="col-md-8 col-md-offset-2">	
+	 <div class="col-md-4 col-md-offset-1">	
 	 	<div class="input-group input-group-lg">
     		 <label for="inputfile">主图片</label>
 	    	 <input type="file" id="image" name="image" class="form-control" >
@@ -227,9 +237,10 @@
  	<hr>
  	<div class="form-group">
 			<div class="col-sm-offset-4 col-sm-8">
-				 <button type="submit" class="btn btn-danger " >添加商品</button>
+				 <button type="submit" class="btn btn-purple " >添加商品</button>
 			</div>
 	</div>
+	</fieldset>
  </form>
 
 								<!-- PAGE CONTENT ENDS -->

@@ -18,7 +18,7 @@
 
 <!-- bootstrap -->
 <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
-
+<link rel="stylesheet" href="assets/css/jytable.css" />
 
 <!-- animate.css -->
 <link rel="stylesheet" href="assets/animate.css" />
@@ -102,8 +102,8 @@
 
 
 <div class="container">
-   <h2>我的订单</h2>
-    <table class="table table-condensed" border="1">
+   <h3>我的订单</h3>
+    <table id="jytable" class="jytable" >
      	<thead>
         	<tr> 
             	<th>订单号</th>     
