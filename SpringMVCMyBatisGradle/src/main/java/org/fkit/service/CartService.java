@@ -22,4 +22,8 @@ public interface CartService {
 	
 	Cart updatecart(int goodid, String username, int quantity);
 
+	Cart cartFind(String username, int goodid);
+
+	Cart update(int goodid, String username, int quantity);
+
 }

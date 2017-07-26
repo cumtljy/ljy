@@ -44,5 +44,11 @@ public interface CartMapper {
 	@Select(" select * from tb_cart where username=#{username} ")
 	List<Cart> selectWhitParam(Map<String, Object> param);
 
+	@Select("select * from tb_cart where username = #{username} and goodid = #{goodid}")
+	Cart cartFind(@Param("username")String username, @Param("goodid")int goodid);
+
+	@Select("update tb_cart set quantity=#{quantity}+quantity where goodid=#{goodid} and username=#{username}")
+	Cart update(@Param("goodid")int goodid,@Param("username")String username,@Param("quantity")int quantity);
+
 	
 }

@@ -49,10 +49,22 @@ public class Cartcontroller {
 				int quantity,				
 				String username,
 			   ModelAndView mv ){
-		cartService.newcart(goodid,good_name, price,image,quantity,username);
-		mv.setViewName("cartSuccess");
+		Cart mycart = cartService.cartFind(username,goodid);
+		if(mycart != null){
+			// 登录失败，设置失败提示信息，并跳转到登录页面			
+			cartService.update(goodid,username,quantity);
+			mv.setViewName("cartSuccess");
+			
+		}else{
+			// 登录成功，将user对象设置到HttpSession作用范围域
+			cartService.newcart(goodid,good_name, price,image,quantity,username);
+			// 转发到main请求
+		    mv.setViewName("cartSuccess");
+
+		}
 		return mv;
 	}
+	
 	
 	// 删除物品
 		@RequestMapping(value="/deletecart")

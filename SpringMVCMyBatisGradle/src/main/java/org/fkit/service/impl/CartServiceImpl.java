@@ -50,4 +50,13 @@ public class CartServiceImpl implements CartService {
 		// TODO Auto-generated method stub
 		return  cartMapper.updatecart(goodid,username,quantity);
 	}
+	@Override
+	public Cart cartFind(String username, int goodid) {
+		return cartMapper.cartFind(username, goodid);
+	}
+	@Override
+	public Cart update(int goodid, String username,int quantity) {
+		// TODO Auto-generated method stub
+		return  cartMapper.update(goodid,username,quantity);
+	}
 }
